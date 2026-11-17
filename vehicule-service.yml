@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: vehicule-service
+
+# Stockage 100 % RAM : pas de spring.datasource.* (bases de données interdites)
+driveeasy:
+  vehicule:
+    storage: ram
+    max-allowed-year-offset: 1
+    default-daily-rate: 50.00
