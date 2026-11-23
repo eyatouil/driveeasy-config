@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: location-service
+
+# Stockage 100 % RAM : pas de spring.datasource.* (bases de données interdites)
+driveeasy:
+  location:
+    storage: ram
+    tarification:
+      remise-fidele: 0.05
+      remise-vip: 0.10
+      coefficient-standard: 1.0
+      coefficient-fidele: 1.0
+      coefficient-vip: 1.0
+      penalite-retard-facteur: 1.5
+    fidelite:
+      palier-fidele: 5
+      palier-vip: 15

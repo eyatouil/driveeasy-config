@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: client-service
+
+# Stockage 100 % RAM : pas de spring.datasource.* (bases de données interdites)
+driveeasy:
+  client:
+    storage: ram
+    age-minimal-location: 21
+    thresholds:
+      fidele-rentals-count: 5
+      vip-rentals-count: 15
