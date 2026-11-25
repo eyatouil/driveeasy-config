@@ -43,4 +43,9 @@ spring:
               - PATCH
               - OPTIONS
             allowedHeaders: "*"
+            exposedHeaders:
+              - X-Total-Count
+              - X-Total-Pages
+              - X-Page
+              - X-Page-Size
             allowCredentials: true

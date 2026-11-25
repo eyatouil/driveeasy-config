@@ -9,5 +9,5 @@ spring:
 driveeasy:
   vehicule:
     storage: ram
-    max-allowed-year-offset: 1
+    max-allowed-year-offset: 0
     default-daily-rate: 50.00

@@ -12,6 +12,9 @@ driveeasy:
     tarification:
       remise-fidele: 0.05
       remise-vip: 0.10
+      coefficient-standard: 1.0
+      coefficient-fidele: 1.0
+      coefficient-vip: 1.0
       penalite-retard-facteur: 1.5
     fidelite:
       palier-fidele: 5
