@@ -1,0 +1,22 @@
+# Profil PROD : démarrage avec SPRING_PROFILES_ACTIVE=prod
+management:
+  tracing:
+    sampling:
+      probability: 0.1          # 10 % des requêtes en production
+  endpoints:
+    web:
+      exposure:
+        include: health,info    # metrics non exposé en prod
+  endpoint:
+    health:
+      show-details: never
+  zipkin:
+    tracing:
+      endpoint: ${ZIPKIN_URL:http://zipkin:9411}/api/v2/spans
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://service-registry:8761/eureka/}
+logging:
+  level:
+    com.driveeasy: INFO

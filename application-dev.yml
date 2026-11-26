@@ -1,0 +1,16 @@
+# Profil DEV : servi par le Config Server à tout client démarré avec le profil "dev"
+# (fusionné avec application.yml ; les valeurs ci-dessous ont priorité).
+management:
+  tracing:
+    sampling:
+      probability: 1.0          # 100 % des requêtes tracées
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+logging:
+  level:
+    com.driveeasy: DEBUG
+eureka:
+  server:
+    enable-self-preservation: false
